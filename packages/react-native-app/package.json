@@ -12,6 +12,7 @@
       "react-native": "0.59.5"
    },
    "devDependencies": {
+      "@wow/common": "1.0.0",
       "@babel/core": "^7.4.3",
       "@babel/runtime": "^7.4.3",
       "@types/jest": "^24.0.11",
@@ -26,5 +27,13 @@
    },
    "jest": {
       "preset": "react-native"
+   },
+   "workspaces": {
+      "nohoist": [
+         "react-native",
+         "react-native/**",
+         "react",
+         "react/**"
+      ]
    }
 }
