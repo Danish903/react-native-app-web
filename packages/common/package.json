@@ -4,11 +4,14 @@
    "main": "dist/index.js",
    "license": "MIT",
    "dependencies": {
+      "mobx": "^5.9.4",
+      "mobx-react-lite": "^1.2.0",
       "react": "^16.8.6",
       "react-native": "^0.59.5"
    },
    "scripts": {
-      "build": "rm -rf ./dist && tsc"
+      "build": "rm -rf ./dist && tsc",
+      "watch": "tsc --watch"
    },
    "devDependencies": {
       "@types/react": "^16.8.14",
